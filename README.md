@@ -6,6 +6,9 @@ Binaries and installers for this distribution repo are published on **[Releases]
 
 ## Install
 
+#### Agent install prompt
+**Agent?:** Install Tollbit from [github.com/tollbit/tollbit-cli-releases](https://github.com/tollbit/tollbit-cli-releases) using the install script or package that your environment needs (below), then run `tollbit guide --install <SKILLS_DIR>` to register the bundled skill.
+
 ### macOS and Linux
 
 ```bash
@@ -38,7 +41,7 @@ Install-Tollbit -NoModifyPath -PrintPathInstructions
 ### npm
 
 ```bash
-npm install -g tollbit
+npm install -g @tollbit/tollbit-cli
 ```
 
 Then run `tollbit` from any terminal (the package downloads the native binary for your OS).
@@ -50,7 +53,7 @@ From **[GitHub Releases](https://github.com/tollbit/tollbit-cli-releases/release
 ## For AI coding agents
 
 - Install `tollbit` so it is on **`PATH`** in every environment where you run shell commands (CI images, local sandboxes, agent runners).
-- Run **`tollbit guide`** for orientation, billing cautions, and **`tollbit guide --install /path/to/skills`** to install the bundled skill into your harness when supported.
+- Run **`tollbit guide`** for orientation, billing cautions, and examples of where to point **`tollbit guide --install <SKILLS_DIR>`**.
 - Configure auth once: **`tollbit login --api-key ... --user-agent ...`** (or `TOLLBIT_API_KEY` / `TOLLBIT_USER_AGENT`), then confirm with **`tollbit whoami`** before paid calls.
 - Prefer **`--json`** when you need machine-readable output; treat **`fetch`** and **`token` + `content`** as **metered** operations—avoid duplicate calls for the same URL.
 
