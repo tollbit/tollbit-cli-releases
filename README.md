@@ -2,7 +2,7 @@
 
 Command-line client for [Tollbit](https://tollbit.com): discover and invoke agent functions staked on publisher properties.
 
-**Current version:** v0.1.1
+**Current version:** v0.1.2
 
 Binaries are published on **[Releases](https://github.com/tollbit/tollbit-cli-releases/releases)**.
 
